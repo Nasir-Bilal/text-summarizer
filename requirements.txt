@@ -4,3 +4,5 @@ torch
 PyMuPDF
 python-docx
 newspaper3k
+lxml
+lxml_html_clean
