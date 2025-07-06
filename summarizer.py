@@ -3,7 +3,7 @@ from transformers import pipeline, AutoTokenizer
 tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-cnn")
 summarizer_pipeline = pipeline("summarization", model="facebook/bart-large-cnn")
 
-def summarize_text(content, compression_ratio=30, depth=0, max_depth=10):
+def summarize_text(content, compression_ratio=30, depth=0, max_depth=5):
     maxTokenLength = 1000
     tokensLength = len(tokenizer.encode(content, truncation=False))
 
@@ -22,7 +22,7 @@ def summarize_text(content, compression_ratio=30, depth=0, max_depth=10):
         chunk_tokens = len(tokenizer.encode(chunk, truncation=False))
         min_len_chunk = max(20, int((compression_ratio / 100) * chunk_tokens * 0.5))
         max_len_chunk = max(40, int((compression_ratio / 100) * chunk_tokens))
-        
+        #summary of each chunk
         summary = summarizer_pipeline(
             chunk,
             max_length=max_len_chunk,
@@ -31,7 +31,7 @@ def summarize_text(content, compression_ratio=30, depth=0, max_depth=10):
         )[0]['summary_text']
 
         chunkSummaries.append(summary)
-
+    #if joined chunk summary exceeds token limit summarize it again
     finalSummary = " ".join(chunkSummaries)
     return summarize_text(
         finalSummary,

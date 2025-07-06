@@ -10,7 +10,7 @@ st.title("📚 Text Summarizer")
 
 isText=False
 
-# ⚙️ Sidebar settings
+#  Sidebar settings
 st.sidebar.header("⚙️ Settings")
 
 compression_ratio = st.sidebar.slider(
@@ -21,15 +21,8 @@ compression_ratio = st.sidebar.slider(
     help="Defines how much the input should be compressed. A lower value means a shorter summary."
 )
 
-max_depth = st.sidebar.slider(
-    "Recursion Depth",
-    min_value=1,
-    max_value=10,
-    value=3,
-    help="Controls how many times the summary should be refined recursively. Higher depth gives more concise results."
-)
 
-# 📥 Select input type
+# Select Input type
 input_mode = st.radio(
     "Select input type:",
     ("Text", "Upload File", "URL")
@@ -88,6 +81,6 @@ if st.button("Summarize"):
         st.warning("⚠️ No input to summarize.")
     else:
         with st.spinner("Summarizing..."):
-            summary = summarize_text(text_input, compression_ratio=compression_ratio, max_depth=max_depth)
+            summary = summarize_text(text_input, compression_ratio=compression_ratio)
             st.success("✅ Summary:")
             st.write(summary)
