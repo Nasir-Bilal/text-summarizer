@@ -1,0 +1,180 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter/Colab notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment variable files
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Mac / Linux / Windows hidden files
+.DS_Store
+Thumbs.db
+
+# Model cache and Hugging Face transformers cache
+.cache/
+huggingface/
+~$*.docx
+
+# Output or temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.pdf
+*.docx
+*.txt
+
+# Streamlit stuff
+.streamlit/
+
+# Deployment-related
+*.db
+*.sqlite3
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# PyInstaller
+*.spec
+
+# Uploads and downloads
+uploads/
+downloads/
+
+# Others (add your own custom paths as needed)
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter/Colab notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment variable files
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Mac / Linux / Windows hidden files
+.DS_Store
+Thumbs.db
+
+# Model cache and Hugging Face transformers cache
+.cache/
+huggingface/
+~$*.docx
+
+# Output or temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.pdf
+*.docx
+*.txt
+
+# Streamlit stuff
+.streamlit/
+
+# Deployment-related
+*.db
+*.sqlite3
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# PyInstaller
+*.spec
+
+# Uploads and downloads
+uploads/
+downloads/
+
+# Others (add your own custom paths as needed)
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter/Colab notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment variable files
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Mac / Linux / Windows hidden files
+.DS_Store
+Thumbs.db
+
+# Model cache and Hugging Face transformers cache
+.cache/
+huggingface/
+~$*.docx
+
+# Output or temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.pdf
+*.docx
+*.txt
+
+# Streamlit stuff
+.streamlit/
+
+# Deployment-related
+*.db
+*.sqlite3
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# PyInstaller
+*.spec
+
+# Uploads and downloads
+uploads/
+downloads/
+
+# Others (add your own custom paths as needed)
